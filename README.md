@@ -7,4 +7,4 @@ This app is a simple REST API that can log data via the POST /log endpoint.
 
 
 ## License
-MIT
+[MIT](./LICENSE)
