@@ -35,6 +35,7 @@
   "dependencies": {
     "axios": "0.27.2",
     "bcryptjs": "2.4.3",
+    "co-body": "6.1.0",
     "glob": "7.1.6",
     "jsonwebtoken": "8.5.1",
     "kcors": "2.2.2",

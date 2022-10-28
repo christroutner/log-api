@@ -2,6 +2,8 @@
 // const LogsApiLib = require('../../../adapters/logapi')
 // const logsApiLib = new LogsApiLib()
 
+const parse = require('co-body')
+
 const wlogger = require('../../../adapters/wlogger')
 
 // let _this
@@ -52,7 +54,8 @@ class LogsApi {
     try {
       console.log('ctx.request.body: ', ctx.request.body)
 
-      const data = ctx.request.body.data
+      // const data = ctx.request.body.data
+      const data = await parse(ctx)
       console.log(`data: ${data}`)
 
       wlogger.info(`data: ${data}`)
