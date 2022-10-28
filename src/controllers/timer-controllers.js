@@ -46,8 +46,8 @@ class TimerControllers {
       // Note: This should be the second command.
       clearInterval(_this.state.exampleInterval)
 
-      const now = new Date()
-      console.log(`Example Timer Controller has fired at ${now.toLocaleString()}`)
+      // const now = new Date()
+      // console.log(`Example Timer Controller has fired at ${now.toLocaleString()}`)
 
       // Enable timer interval after processing.
       _this.state.exampleInterval = setInterval(_this.exampleTimerController, _this.state.exampleTime)
